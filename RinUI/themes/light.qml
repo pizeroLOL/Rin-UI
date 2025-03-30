@@ -1,4 +1,3 @@
-
 import QtQuick 2.15
 import "../themes"
 
@@ -40,7 +39,7 @@ QtObject {
         property color layerColor: Qt.alpha("#ffffff", 0.5)
 
         // Text
-        property color textColor: "#1b1b1b"
+        property color textColor: Qt.alpha("#1b1b1b", 0.8956)
         property color textSecondaryColor: Qt.alpha("#000000", 0.6063)
         property color textAccentColor: Utils.primaryColor
         property color textOnAccentColor: "#ffffff"
@@ -86,8 +85,10 @@ QtObject {
     // Shadows //
     property var shadows: {
         "dialog": {
-            "color": Qt.alpha("#000000", 0.37),  // 模糊颜色
-            "blur": 64,  // 模糊度
+            "color": Qt.alpha("#000000", 0.37)  // 模糊颜色
+            ,
+            "blur": 64  // 模糊度
+            ,
             "offsetY": 32
         },
         "tooltip": {
@@ -104,7 +105,7 @@ QtObject {
             "color": Qt.alpha("#000000", 0.14),
             "blur": 16,
             "offsetY": 8
-        },
+        }
     }
 
     // Typography //
